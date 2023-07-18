@@ -30,3 +30,4 @@ function Home(){
 
 export default Home 
 
+// Enja jai ast k tamam component haa qarar dara. wa route hay mukhtalefesh

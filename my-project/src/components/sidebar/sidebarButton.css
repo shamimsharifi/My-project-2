@@ -2,20 +2,30 @@ a {
     text-decoration: none!important;
 }
 .btn-body{
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     border-radius: 20px;
-    color: aliceblue;
+    color: rgb(224, 224, 237);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 30px auto;
+    transition:all 0.2s ease;
 }
 
-.btn.title{
-    margin: 4px auto;
-  
-}
 .btn-title{
-    size: 50px;
+    margin: 4px auto;
+    font-weight: 600;
+    font-size: 14px;
+    
+  
+} 
+.btn-body.active{
+    background-color: rgb(57, 92, 77);
+    transform: scale(1.3);
+} 
+.btn-body:hover{
+    color: rgb(91, 119, 117);
 }
+
