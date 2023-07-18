@@ -1,0 +1,21 @@
+a {
+    text-decoration: none!important;
+}
+.btn-body{
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn.title{
+    margin: 4px auto;
+  
+}
+.btn-title{
+    size: 50px;
+}
