@@ -7,7 +7,7 @@ export default function SidebarButton(props) {
   const location = useLocation()
   
    const isActive = location.pathname === props.to
-   console.log(props.to)
+
  
    const btnClass = isActive ? "btn-body active"  : "btn-body"
   return (

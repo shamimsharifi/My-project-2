@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import './sidebar.css'
 import SidebarButton from './SidebarButton'
@@ -7,13 +7,24 @@ import {FaGripfire, FaPlay} from 'react-icons/fa'
 import {FaSignOutAlt} from 'react-icons/fa'
 import {IoLibrary} from 'react-icons/io5'
 import {CgFeed} from 'react-icons/cg'
+import apiClient from '../../spotify'
 
 
 export default function Sidebar() {
+  const [image, setImage]= useState('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9r3ogaSmpwNYSaEKRifVaHjwmYsKSW7fC6Q&usqp=CAU' )
+  useEffect(() => {
+    apiClient.get("me").then((response) => {
+      setImage(response.data.image);
+      
+    });
+    
+  }, []);
+  
+
   
   return (
     <div className='sidebar'>
-      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9r3ogaSmpwNYSaEKRifVaHjwmYsKSW7fC6Q&usqp=CAU' className='profile-image' alt='image'/>
+      <img src= {image} className='profile-image' alt='image'/>
       <div>
       <SidebarButton title="Feed" to="/Feed" icon={<CgFeed />} />
         <SidebarButton title="Trending" to="/Trending" icon={<FaGripfire />} />
@@ -22,7 +33,7 @@ export default function Sidebar() {
         <SidebarButton title="Library" to="/Library" icon={<IoLibrary />} />
 
       </div>
-      <SidebarButton/>
+      <SidebarButton title="Sign Out" to="" icon={<FaSignOutAlt />} />
     </div>
   )
 }

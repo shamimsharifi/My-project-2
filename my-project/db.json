@@ -1,0 +1,33 @@
+{
+    "reviews": [
+      {
+        "id": 1,
+        "songTitle": "Shape of You",
+        "artist": "Ed Sheeran",
+        "rating": 5,
+        "reviewText": "Amazing song! I love the catchy tune and lyrics."
+      },
+      {
+        "id": 2,
+        "songTitle": "Blinding Lights",
+        "artist": "The Weeknd",
+        "rating": 4,
+        "reviewText": "A great song with a fantastic beat."
+      },
+      {
+        "id": 3,
+        "songTitle": "Someone Like You",
+        "artist": "Adele",
+        "rating": 5,
+        "reviewText": "This song never fails to touch my heart. Beautiful vocals!"
+      },
+      {
+        "id": 4,
+        "songTitle": "Havana",
+        "artist": "Camila Cabello",
+        "rating": 4,
+        "reviewText": "Such a fun and catchy song. Makes me want to dance!"
+      }
+    ]
+  }
+  
